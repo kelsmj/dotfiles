@@ -6,7 +6,7 @@ alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
-alias p="cd ~/Projects"
+alias c="cd ~/Code"
 alias g="git"
 alias v="vim"
 alias m="mate ."
@@ -17,6 +17,9 @@ alias la="ls -Gla"
 
 # List only directories
 alias lsd='ls -l | grep "^d"'
+
+#List Directory Tree
+alias lst="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 
 # Always use color output for `ls`
 if [[ "$OSTYPE" =~ ^darwin ]]; then
