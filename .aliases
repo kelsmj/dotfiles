@@ -11,6 +11,7 @@ alias g="git"
 alias v="vim"
 alias m="mate ."
 alias s="subl ."
+alias pow_kill='killall -e node'
 
 # List all files colorized in long format, including dot files
 alias la="ls -Gla"
